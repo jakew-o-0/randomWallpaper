@@ -1,0 +1,5 @@
+#!/bin/bash
+wallpapers=($(ls /home/jake/wallpapers))
+len=${#wallpapers[@]}
+rand=$(( $RANDOM % $len ))
+feh --bg-scale /home/jake/wallpapers/${wallpapers[$rand]}
